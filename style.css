@@ -12,14 +12,14 @@ header{
 .secao1{
 
     width: auto;
-    height: 55px;
-    background-color: blanchedalmond;
-    color: black;
+    height: 200px;
     text-align: center;
+    
 }
 
 .secao1 h1{
 
-    
+    background-color: black;
+    color:white;
     
 }
