@@ -11,7 +11,15 @@ header{
 
 .secao1{
 
+    width: auto;
+    height: 55px;
     background-color: blanchedalmond;
     color: black;
     text-align: center;
+}
+
+.secao1 h1{
+
+    
+    
 }
