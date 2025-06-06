@@ -20,6 +20,12 @@ body {
 
 }
 
+section{
+
+    border-bottom: 2px solid black;
+    
+}
+
 img {
 
     width: 35rem;
