@@ -20,7 +20,7 @@ body {
 
 }
 
-img{
+img {
 
     width: 35rem;
     height: 20rem;
@@ -63,7 +63,7 @@ img{
     padding: 10px;
     margin: 90px;
     color: white;
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: bold;
     font-size: larger;
 
@@ -103,7 +103,7 @@ a:hover {
     height: auto;
     margin-top: 30px;
     color: var(--cor-principal);
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: bolder;
     font-size: xx-large;
 
@@ -174,7 +174,7 @@ a:hover {
     min-height: 90vh;
     height: auto;
     padding: 100px;
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
 }
 
 .resumo-titulo {
@@ -185,7 +185,7 @@ a:hover {
     height: auto;
     margin-top: 30px;
     color: var(--cor-secundaria);
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: bolder;
     font-size: xx-large;
 
