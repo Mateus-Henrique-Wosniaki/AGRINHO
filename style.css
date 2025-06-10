@@ -3,13 +3,11 @@
     --cor-principal: rgb(5, 37, 5);
     --cor-secundaria: #dee0dd;
     --cor-tercearia: #b1a5a5;
-
 }
 
 html {
 
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -17,32 +15,28 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-
-}
-
-section{
-
-    border-bottom: 2px solid black;
-    
 }
 
 img {
 
-    width: 35rem;
-    height: 20rem;
-    margin: 35px;
-    border-radius: 20px;
-
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border-radius: 40px;
 }
+
+
 
 
 /* BARRA DE NAVEGACAO*/
 
 
+
 .navegacao {
 
     top: 0;
-    background-color:rgb(2, 22, 2);;
+    flex-wrap: nowrap;
+    background-color: rgb(2, 22, 2);
     width: 100vw;
     height: 60px;
     border-top: 3px solid var(--cor-secundaria);
@@ -52,39 +46,39 @@ img {
     justify-content: center;
     position: fixed;
     z-index: 10;
-
 }
+
 
 .navegacao-links {
 
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-
 }
+
 
 .navegacao-links a {
 
+    display: inline-block;
     text-decoration: none;
     padding: 10px;
-    margin: 90px;
+    margin: 0 90px;
     color: white;
-    font-family: Quicksand, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: larger;
-
 }
 
-.navegacao-links,
-a:hover {
+.navegacao-links a:hover {
 
+    transform: translateX(5px);
     color: var(--cor-tercearia);
-
 }
 
 
 
 /* CONTEUDO DA PAGINA*/
+
 
 
 /* SECAO-INICIO */
@@ -93,26 +87,36 @@ a:hover {
 
 .inicio {
 
-    background-color: var(--cor-secundaria);
+    background-image: url(images/img-fundo-inicio.jpg);
+    background-position: center, center;
+    background-size: cover;
     width: auto;
     min-height: 90vh;
     height: auto;
     padding: 100px;
-
 }
 
 .inicio-titulo {
 
-    display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     height: auto;
     margin-top: 30px;
-    color: var(--cor-principal);
-    font-family: Quicksand, sans-serif;
+    padding: 20px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    text-shadow: 0 0 15px rgb(21, 189, 21);
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 50px;
+    font-family: "Quicksand", sans-serif;
     font-weight: bolder;
     font-size: xx-large;
+}
 
+
+.inicio-titulo:hover {
+
+    transform: scale(1.05);
 }
 
 .inicio-containers {
@@ -136,21 +140,18 @@ a:hover {
     margin-top: 70px;
     border: 3px solid var(--cor-principal);
     border-radius: 60px;
-    background-color: var(--cor-secundaria);
-
-
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .inicio-container1:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #dadbda;
-
 }
 
 .inicio-container2:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #dadbda;
 }
 
@@ -160,11 +161,10 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     margin: 2px;
-    font-family: Quicksand, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 30px;
     text-align: center;
     color: black;
-
 }
 
 
@@ -180,7 +180,7 @@ a:hover {
     min-height: 90vh;
     height: auto;
     padding: 100px;
-    font-family: Quicksand, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .resumo-titulo {
@@ -191,13 +191,10 @@ a:hover {
     height: auto;
     margin-top: 30px;
     color: var(--cor-secundaria);
-    font-family: Quicksand, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bolder;
     font-size: xx-large;
-
 }
-
-
 
 .resumo-containers {
 
@@ -223,34 +220,29 @@ a:hover {
     border: 3px solid var(--cor-secundaria);
     border-radius: 40px;
     background-color: var(--cor-principal);
-
 }
 
 .resumo-container-beneficios:hover {
 
     transform: scale(1.01);
     background-color: rgb(2, 22, 2);
-
 }
 
 .resumo-container-importancia:hover {
 
     transform: scale(1.01);
     background-color: rgb(2, 22, 2);
-
 }
 
 .resumo-container-dependencia:hover {
 
     transform: scale(1.01);
     background-color: rgb(2, 22, 2);
-
 }
 
 .resumo h2 {
 
     color: whitesmoke;
-
 }
 
 .resumo p {
@@ -263,8 +255,8 @@ a:hover {
     font-size: 30px;
     text-align: center;
     color: var(--cor-secundaria);
-
 }
+
 
 
 /* SECAO-EVENTOS */
@@ -291,7 +283,6 @@ a:hover {
     color: var(--cor-principal);
     font-weight: bolder;
     font-size: xx-large;
-
 }
 
 .eventos-containers {
@@ -302,41 +293,37 @@ a:hover {
     padding: 10px;
 }
 
-.eventos-container-expolondrina, .eventos-container-expoinga {
+.eventos-container-expolondrina,
+.eventos-container-expoinga {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 110rem;
-    height: 50rem;
+    height: 30rem;
     padding: 20px;
     border: 4px solid var(--cor-principal);
     border-radius: 60px;
-    background-color: var(--cor-secundaria);
-
 }
 
-.eventos-container-expolondrina:hover{
+.eventos-container-expolondrina:hover {
 
     transform: scale(1.01);
     background-color: #dadbda;
-
 }
 
-.eventos-container-expoinga:hover{
+.eventos-container-expoinga:hover {
 
     transform: scale(1.01);
     background-color: #dadbda;
-
 }
+
 
 .eventos h2 {
 
     padding-top: 50px;
     color: var(--cor-principal);
-    text-decoration: dotted  ;
-
 }
 
 .eventos p {
@@ -349,5 +336,187 @@ a:hover {
     font-size: 30px;
     text-align: center;
     color: var(--cor-principal);
+}
 
+
+
+/* SECAO-SOBRE */
+
+
+
+.sobre {
+
+    background-color: var(--cor-principal);
+    width: auto;
+    min-height: 40vh;
+    height: auto;
+    padding: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.sobre-titulo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 30px;
+    color: var(--cor-secundaria);
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.sobre-containers {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre p {
+
+    align-items: start;
+    justify-content: space-between;
+    width: 70rem;
+    margin: 10px;
+    padding: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    text-align: start;
+    color: var(--cor-secundaria);
+    border-left: 4px solid var(--cor-secundaria);
+    border-right: 4px solid var(--cor-secundaria);
+}
+
+
+
+/* FOOTER DA PÁGINA*/
+
+
+
+footer {
+
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    color: var(--cor-principal);
+    font-size: 1rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+@media(max-width: 1900px) {
+
+    .eventos-container-expoinga,
+    .eventos-container-expolondrina {
+
+        width: 70%;
+        height: auto;
+    }
+
+    .sobre-containers {
+
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+@media(max-width: 1400px) {
+
+    .resumo-container-beneficios,
+    .resumo-container-importancia,
+    .resumo-container-dependencia {
+
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 450px) and (max-width: 1300px) {
+
+    html {
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .inicio-container1,
+    .inicio-container2,
+    .resumo-container-beneficios,
+    .resumo-container-dependencia,
+    .resumo-container-importancia,
+    .eventos-container-expoinga,
+    .eventos-container-expolondrina {
+
+        height: auto;
+    }
+
+    .inicio-container1,
+    .inicio-container2 {
+
+        border-radius: 40px;
+    }
+
+    .inicio-containers,
+    .resumo-containers,
+    .eventos-containers,
+    .sobre-containers {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio-container1,
+    .inicio-container2,
+    .resumo-container-beneficios,
+    .resumo-container-dependencia,
+    .resumo-container-importancia,
+    .eventos-container-expoinga,
+    .eventos-container-expolondrina {
+
+        width: 90%;
+        margin: 20px;
+    }
+
+    .inicio p {
+
+        font-family: 27px;
+    }
+
+    .sobre p {
+
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .resumo p {
+
+        font-size: 24px;
+    }
+
+    .eventos {
+
+        font-size: 26px;
+    }
 }
