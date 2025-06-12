@@ -10,13 +10,13 @@ Abrangendo temas como sua importância, imfluência, dependência, além de deta
       - Início;
       - Resumo;
       - Eventos;
-      - Sobre;
+      - Sobre.
     2. Início
-        - Relembra a definição desta coneção e trás o objetivo do site;
+        - Relembra a definição desta coneção e trás o objetivo do site.
     3. Resumo
-        - Trás ideias principais trabalhadas no site, como sua importância, dependência desta relação e sua influência na sociedade;
+        - Trás ideias principais trabalhadas no site, como sua importância, dependência desta relação e sua influência na sociedade.
     4. Eventos
-        - Destaca dois eventos que celembram literalmente esta coneção: Expolondrina e Expoingá, abrangendo suas informações e características;
+        - Destaca dois eventos que celembram literalmente esta coneção: Expolondrina e Expoingá, abrangendo suas informações e características.
     5. Sobre
-        - Deixa as informações sobre o desenvolvimento do site, como o nome do estudante, local de estudo, fonte de texto e imagens;
+        - Deixa as informações sobre o desenvolvimento do site, como o nome do estudante, local de estudo, fonte de texto e imagens.
       
