@@ -540,6 +540,10 @@ footer {
         height: auto;
     }
 
+    .eventos h1{
+        text-align: center;
+    }
+    
     .eventos-texto {
         text-align: center;
         align-items: center;
