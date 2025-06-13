@@ -2,7 +2,7 @@
 
 
 Este projeto, seguindo o tema Agrinho 2025 "Festejando a conexão campo cidade", tem como objetivo o reconhecimento da importância desta relação.
-Abrangendo temas como sua importância, imfluência, dependência, além de detalhes obre eventos que festejam esta conexão
+Abrangendo temas como sua importância, influência, dependência, além de detalhes sobre eventos que festejam esta conexão.
 
  ## O site possui as seguintes seções:
  
