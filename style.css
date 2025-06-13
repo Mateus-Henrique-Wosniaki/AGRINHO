@@ -521,13 +521,15 @@ footer {
 @media(max-width: 1900px) {
 
     .resumo-containers {
-
         align-items: center;
     }
 
     .eventos-container-expoinga,
     .eventos-container-expolondrina {
-
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
         text-align: center;
         align-items: center;
         width: 70%;
@@ -535,24 +537,21 @@ footer {
     }
 
     .eventos-texto {
-
         text-align: center;
         align-items: center;
         flex-direction: column;
-
     }
 
     .eventos-container-bloco-expoinga,
     .eventos-container-bloco-expolondrina {
-
-
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         align-items: center;
         width: 80%;
-
     }
 
     .sobre-containers {
-
         flex-direction: column;
     }
 
