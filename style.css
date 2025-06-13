@@ -597,6 +597,9 @@ footer {
         align-items: center;
         text-align: center;
     }
+    .navegacao{
+        margin: 10px;
+    }
     .navegacao a {
 
         margin: 20px;
