@@ -43,7 +43,7 @@ body {
 .navegacao {
     top: 0;
     background-color: var(--cor-verde-escuro);
-    width: 100%;
+    width: 100vh;
     height: 70px;
     box-shadow: 0 0 30px #5D4037;
     display: flex;
