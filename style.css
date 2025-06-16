@@ -6,6 +6,7 @@
     --cor-cinza: #dee0dd;
     --cor-cinza-escuro: #b1a5a5;
     --cor-amarelo: #FBC02D;
+    --fonte-do-site: "Quicksand", sans-serif;
 }
 
 html {
@@ -62,12 +63,11 @@ body {
     list-style: none;
 }
 
-
 .navegacao a {
     color: var(--cor-cinza);
     text-decoration: none;
     padding: 10px 20px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-weight: bold;
     font-size: larger;
     border-radius: 10px;
@@ -93,6 +93,7 @@ body {
     min-height: 90vh;
     height: auto;
     padding: 60px;
+    text-align: center;
 }
 
 .inicio-titulo {
@@ -102,10 +103,9 @@ body {
 
 .inicio-titulo h1 {
     margin: 0;
-    text-align: center;
     margin-top: 30px;
     color: var(--cor-cinza);
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-weight: bolder;
     font-size: 100px;
 }
@@ -115,9 +115,8 @@ body {
 }
 
 .inicio-titulo h6 {
-    text-align: center;
     color: var(--cor-cinza);
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -128,17 +127,21 @@ body {
 
 .inicio-containers {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
 .inicio-container {
     display: flex;
+    flex: 1 1 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60rem;
-    height: auto;
+    width: 100%;
+    max-width: 60rem;
     padding: 25px;
     margin-inline: 15px;
     margin-top: 50px;
@@ -155,9 +158,8 @@ body {
 
 .inicio p {
     margin: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-do-site);
     font-size: 30px;
-    text-align: center;
     color: var(--cor-verde-escuro);
 }
 
@@ -169,7 +171,8 @@ body {
     background-color: var(--cor-verde);
     min-height: 90vh;
     padding: 100px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
+    text-align: center;
 }
 
 .resumo-titulo {
@@ -178,7 +181,7 @@ body {
     justify-content: center;
     margin-top: 30px;
     color: var(--cor-cinza);
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -255,9 +258,8 @@ body {
 
 .resumo p {
     margin: 2px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-size: 30px;
-    text-align: center;
     color: var(--cor-cinza);
 }
 
@@ -270,14 +272,14 @@ body {
     width: 100%;
     min-height: 90vh;
     padding: 50px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .eventos-titulo {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     margin-top: 30px;
     color: var(--cor-verde);
@@ -295,7 +297,6 @@ body {
 
 .eventos-container-bloco-expolondrina {
     background: linear-gradient(to right, #5D4037, #1f5322);
-    text-align: center;
     padding: 25px;
     border-radius: 40px;
     width: 100%;
@@ -304,7 +305,6 @@ body {
 
 .eventos-container-bloco-expoinga {
     background: linear-gradient(to left, #5D4037, #1f5322);
-    text-align: center;
     padding: 25px;
     border-radius: 40px;
     width: 100%;
@@ -363,8 +363,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-size: 30px;
     color: var(--cor-cinza);
     margin: 5px;
@@ -401,7 +400,8 @@ body {
     width: auto;
     min-height: 40vh;
     padding: 50px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
+    text-align: center;
 }
 
 .sobre h1 {
@@ -428,7 +428,7 @@ body {
     max-width: 70rem;
     margin: 10px;
     padding: 15px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-size: 25px;
     text-align: start;
     color: var(--cor-cinza);
@@ -457,7 +457,7 @@ body {
     width: auto;
     min-height: 40vh;
     padding: 50px;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
 }
 
 .contato h1 {
@@ -509,7 +509,7 @@ body {
 
 .contato-email h3,
 h4 {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--fonte-do-site);
     font-size: 25px;
 }
 
@@ -532,4 +532,128 @@ footer {
     color: black;
     font-size: 1.2rem;
     border-top: 3px solid var(--cor-verde-escuro);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:1024px) {
+    .navegacao-links {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .inicio-titulo h1 {
+        color: var(--cor-verde-escuro);
+        font-size: 60px;
+    }
+
+    .inicio-titulo h6 {
+        font-size: 35px;
+    }
+
+    .inicio-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio-container{
+        max-width: 40rem;
+    }
+
+    .resumo p,
+    .eventos p,
+    .inicio p {
+        font-size: 24px;
+    }
+
+    .sobre-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre p {
+        text-align: center;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navegacao {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navegacao-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio-titulo h1 {
+        font-size: 45px;
+    }
+
+    .inicio-titulo h6 {
+        color: var(--cor-verde-escuro);
+        font-size: 28px;
+    }
+
+    .inicio-container {
+        width: 90%;
+    }
+
+    .inicio p,
+    .resumo p,
+    .eventos p,
+    .sobre p {
+        font-size: 20px
+    }
+
+    .resumo-container-beneficios,
+    .resumo-container-importancia,
+    .resumo-container-dependencia {
+        width: 90%;
+    }
+
+    .sobre {
+        align-items: center;
+    }
+
+    .sobre p {
+        text-align: center;
+        padding: 10px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .sobre img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .contato h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contato-item h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contato-email h3,
+    .contato-email h4 {
+        font-size: 20px;
+        text-align: center;
+    }
 }
