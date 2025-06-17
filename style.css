@@ -819,14 +819,14 @@ footer {
     }
 
     .eventos h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .eventos-item {
         width: 95%;
         padding: 30px;
     }
-
+    
     .eventos-container-expolondrina,
     .eventos-container-expoinga {
         width: 100%;
