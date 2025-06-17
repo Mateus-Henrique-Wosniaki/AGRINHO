@@ -1,12 +1,13 @@
 /* DOCUMENTO */
 
 :root {
-    --cor-verde: rgb(5, 37, 5);
-    --cor-verde-escuro: rgb(2, 22, 2);
-    --cor-cinza: #dee0dd;
-    --cor-cinza-escuro: #b1a5a5;
-    --cor-amarelo: #FBC02D;
-    --fonte-do-site: "Quicksand", sans-serif;
+    --cor-destaque: rgb(5, 37, 5);
+    --cor-destaque2: rgb(2, 22, 2);
+    --cor-complementar: #dee0dd;
+    --cor-complementar2: #b1a5a5;
+    --cor-detalhe: #FBC02D;
+    --fonte-principal: "Quicksand", sans-serif;
+    --fonte-secundaria: Verdana, Tahoma, sans-serif;
 }
 
 html {
@@ -29,7 +30,7 @@ body {
     right: 10px;
     padding: 20px;
     border-radius: 50%;
-    color: var(--cor-amarelo);
+    color: var(--cor-detalhe);
     z-index: 1000;
     font-size: 60px;
     transition: all 0.3s ease;
@@ -37,12 +38,12 @@ body {
 
 .botao-voltar:hover {
     padding: 25px;
-    color: var(--cor-cinza-escuro);
+    color: var(--cor-complementar2);
 }
 
 .navegacao {
     top: 0;
-    background-color: var(--cor-verde-escuro);
+    background-color: var(--cor-destaque2);
     width: 100%;
     height: 70px;
     box-shadow: 0 0 30px #5D4037;
@@ -64,10 +65,10 @@ body {
 }
 
 .navegacao a {
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
     text-decoration: none;
     padding: 10px 20px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     font-weight: bold;
     font-size: larger;
     border-radius: 10px;
@@ -76,8 +77,8 @@ body {
 }
 
 .navegacao-links a:hover {
-    border-bottom: 3px solid var(--cor-amarelo);
-    color: var(--cor-cinza-escuro);
+    border-bottom: 3px solid var(--cor-detalhe);
+    color: var(--cor-complementar2);
     box-shadow: 0 6px 8px rgb(0, 0, 0, 1);
 }
 
@@ -104,25 +105,25 @@ body {
 .inicio-titulo h1 {
     margin: 0;
     margin-top: 30px;
-    color: var(--cor-cinza);
-    font-family: var(--fonte-do-site);
+    color: var(--cor-complementar);
+    font-family: var(--fonte-principal);
     font-weight: bolder;
     font-size: 100px;
 }
 
 .inicio-titulo span {
-    color: var(--cor-amarelo);
+    color: var(--cor-detalhe);
 }
 
 .inicio-titulo h6 {
-    color: var(--cor-cinza);
-    font-family: var(--fonte-do-site);
+    color: var(--cor-complementar);
+    font-family: var(--fonte-principal);
     font-weight: bolder;
     font-size: 50px;
 }
 
 .inicio h6 span {
-    color: var(--cor-amarelo);
+    color: var(--cor-detalhe);
 }
 
 .inicio-containers {
@@ -143,7 +144,7 @@ body {
     padding: 25px;
     margin-inline: 15px;
     margin-top: 50px;
-    box-shadow: 0 0 50px var(--cor-verde);
+    box-shadow: 0 0 50px var(--cor-destaque);
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.25);
     transition: all 0.3s ease;
@@ -151,14 +152,14 @@ body {
 
 .inicio-container:hover {
     transform: scale(1.05);
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-complementar);
 }
 
 .inicio p {
     margin: 2px;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 30px;
-    color: var(--cor-verde-escuro);
+    color: var(--cor-destaque2);
 }
 
 
@@ -166,10 +167,10 @@ body {
 /* SEÇÃO: RESUMO */
 
 .resumo {
-    background-color: var(--cor-verde);
+    background-color: var(--cor-destaque);
     min-height: 90vh;
     padding: 100px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     text-align: center;
 }
 
@@ -178,8 +179,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    color: var(--cor-cinza);
-    font-family: var(--fonte-do-site);
+    color: var(--cor-complementar);
+    font-family: var(--fonte-principal);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -208,7 +209,7 @@ body {
     margin-top: 50px;
     box-shadow: 0 0 25px rgb(93, 167, 93);
     border-radius: 40px;
-    background-color: var(--cor-verde-escuro);
+    background-color: var(--cor-destaque2);
     transition: all 0.3s ease;
 }
 
@@ -232,9 +233,9 @@ body {
     text-decoration: none;
     padding: 20px;
     border-radius: 40%;
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-complementar);
     font-size: 60px;
-    box-shadow: 0 0 10px var(--cor-cinza);
+    box-shadow: 0 0 15px var(--cor-detalhe);
     transition: all 0.3s ease;
 }
 
@@ -251,14 +252,14 @@ body {
 }
 
 .resumo h2 {
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
 }
 
 .resumo p {
     margin: 2px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     font-size: 30px;
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
 }
 
 
@@ -266,11 +267,11 @@ body {
 /* SEÇÃO: EVENTOS */
 
 .eventos {
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-complementar);
     width: 100%;
     min-height: 90vh;
     padding: 50px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     box-sizing: border-box;
     text-align: center;
 }
@@ -280,7 +281,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    color: var(--cor-verde);
+    color: var(--cor-destaque);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -312,7 +313,7 @@ body {
 .eventos h2 {
     font-size: 36px;
     padding-top: 10px;
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
 }
 
 .eventos-container-expolondrina,
@@ -323,7 +324,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
-    border: 4px solid var(--cor-cinza);
+    border: 4px solid var(--cor-complementar);
     border-radius: 60px;
     background-color: rgb(26, 30, 15, 0.5);
     box-sizing: border-box;
@@ -349,7 +350,7 @@ body {
     height: 220px;
     max-width: 90vw;
     border-radius: 30px;
-    box-shadow: 0 0 20px var(--cor-cinza);
+    box-shadow: 0 0 20px var(--cor-complementar);
     background-color: rgb(5, 37, 5);
     padding: 80px;
     margin: 10px;
@@ -361,9 +362,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     font-size: 30px;
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
     margin: 5px;
     padding: 10px;
 }
@@ -382,9 +383,9 @@ body {
     text-decoration: none;
     padding: 20px;
     border-radius: 40%;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-destaque);
     font-size: 60px;
-    box-shadow: 0 0 10px var(--cor-cinza);
+    box-shadow: 0 0 10px var(--cor-complementar);
     transition: all 0.3s ease;
     margin: 20px;
 }
@@ -394,11 +395,11 @@ body {
 /* SEÇÃO: SOBRE */
 
 .sobre {
-    background-color: var(--cor-verde);
+    background-color: var(--cor-destaque);
     width: auto;
     min-height: 40vh;
     padding: 50px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     text-align: center;
 }
 
@@ -407,7 +408,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -426,12 +427,12 @@ body {
     max-width: 70rem;
     margin: 10px;
     padding: 15px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     font-size: 25px;
     text-align: start;
-    color: var(--cor-cinza);
-    border-left: 4px solid var(--cor-cinza);
-    border-right: 4px solid var(--cor-cinza);
+    color: var(--cor-complementar);
+    border-left: 4px solid var(--cor-complementar);
+    border-right: 4px solid var(--cor-complementar);
     box-sizing: border-box;
 }
 
@@ -443,7 +444,7 @@ body {
     max-width: 30rem;
     height: 100%;
     border-radius: 40px;
-    box-shadow: 0 0 15px var(--cor-amarelo);
+    box-shadow: 0 0 15px var(--cor-detalhe);
 }
 
 
@@ -451,11 +452,11 @@ body {
 /* SEÇÃO: CONTATO */
 
 .contato {
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-complementar);
     width: auto;
     min-height: 40vh;
     padding: 50px;
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
 }
 
 .contato h1 {
@@ -463,7 +464,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    color: var(--cor-verde);
+    color: var(--cor-destaque);
     font-weight: bolder;
     font-size: 50px;
 }
@@ -480,7 +481,7 @@ body {
 .contato-item {
     display: flex;
     align-items: center;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-destaque);
     width: 100%;
     max-width: 30rem;
     height: 20rem;
@@ -490,7 +491,7 @@ body {
 }
 
 .contato-item h2 {
-    color: var(--cor-cinza);
+    color: var(--cor-complementar);
     font-size: 40px;
 }
 
@@ -507,13 +508,13 @@ body {
 
 .contato-email h3,
 h4 {
-    font-family: var(--fonte-do-site);
+    font-family: var(--fonte-principal);
     font-size: 25px;
 }
 
 .contato-email a {
     text-decoration: none;
-    color: var(--cor-verde-escuro);
+    color: var(--cor-destaque2);
 }
 
 
@@ -521,7 +522,7 @@ h4 {
 /* FOOTER DA PÁGINA*/
 
 footer {
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-complementar);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,7 +530,7 @@ footer {
     height: 50px;
     color: black;
     font-size: 1.2rem;
-    border-top: 3px solid var(--cor-verde-escuro);
+    border-top: 3px solid var(--cor-destaque2);
 }
 
 
@@ -543,7 +544,7 @@ footer {
     }
 
     .inicio-titulo h1 {
-        color: var(--cor-verde-escuro);
+        color: var(--cor-destaque2);
         font-size: 60px;
     }
 
