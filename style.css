@@ -659,49 +659,56 @@ footer {
 
 
 
-@media (max-width:500px) {
-    .navegacao a{
+@media (max-width:590px) {
+    .navegacao a {
         font-size: 14px;
         padding: 6px 12px;
     }
 
-    .inicio-titulo h1{
+    .inicio-titulo h1 {
         font-size: 28px;
     }
 
-    .inicio-titulo h6{
+    .inicio-titulo h6 {
         font-size: 16px;
     }
 
     .resumo-container-beneficios,
     .resumo-container-importancia,
-    .resumo-container-dependencia{
+    .resumo-container-dependencia {
         max-width: 100%;
         width: 90%;
         margin: 10px auto;
-        padding: 20px;
     }
 
-    .sobre-containers{
-        padding: 10px;
+    .resumo-container-beneficios {
+        padding: 80px;
     }
 
-    .eventos-item{
+    .resumo-container-importancia {
+        padding: 80px;
+    }
+
+    .resumo-container-dependencia {
+        padding: 80px;
+    }
+
+    .eventos-item {
         width: 90%;
         max-width: 350px;
         height: auto;
-        padding: 20px;
+        padding: 50px;
         box-sizing: border-box;
         margin: 10px auto;
     }
 
     .eventos-container-expolondrina,
-    .eventos-container-expoinga{
+    .eventos-container-expoinga {
         width: 95%;
         padding: 15px;
     }
 
-    .eventos-texto{
+    .eventos-texto {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -710,34 +717,142 @@ footer {
         gap: 20px;
     }
 
-    .sobre p{
+    .sobre p {
         font-size: 18px;
         padding: 10px;
     }
 
-    .sobre img{
+    .sobre img {
         max-width: 100%;
         height: auto;
     }
 
-    .contato-container{
+    .contato-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .contato h1{
+    .contato h1 {
         font-size: 28px;
     }
 
     .contato-item,
-    .contato-email{
+    .contato-email {
         max-width: 100%;
         padding: 15px;
         box-sizing: border-box;
     }
 
     .contato-email h3,
-    .contato-email h4{
+    .contato-email h4 {
         font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 415px) {
+    .navegacao {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .navegacao-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .navegacao a {
+        font-size: 11px;
+        padding: 6px 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .inicio-titulo h1 {
+        font-size: 22px;
+    }
+
+    .inicio-titulo h6 {
+        font-size: 14px;
+        color: var(--cor-destaque);
+    }
+
+    .resumo-titulo{
+        font-size: 22px;
+    }
+
+    .resumo-container-beneficios,
+    .resumo-container-importancia,
+    .resumo-container-dependenci {
+        width: 95%;
+        padding: 40px 20px;
+        margin: 20px auto;
+    }
+
+    .resumo-container-beneficios {
+        padding: 70px;
+    }
+
+    .resumo-container-importancia {
+        padding: 70px;
+    }
+
+    .resumo-container-dependencia {
+        padding: 70px;
+    }
+
+    .eventos-titulo{
+        font-size: 22px;
+    }
+
+    .eventos h2 {
+        font-size: 30px;
+    }
+
+    .eventos-item {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .eventos-container-expolondrina,
+    .eventos-container-expoinga {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .eventos-texto {
+        padding: 10px;
+    }
+
+    .sobre{
+        text-align: center;
+    }
+
+    .sobre h1{
+        font-size: 22px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .contato-item,
+    .contato-email {
+        padding: 10px;
+    }
+
+    .contato-email h3,
+    .contato-email h4 {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 1rem;
     }
 }
