@@ -753,24 +753,32 @@ footer {
 
 @media (max-width: 415px) {
     .navegacao {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-        align-items: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       height: auto;
+       padding: 10px;
+       width: 100%;
+       box-sizing: border-box;
     }
 
     .navegacao-links {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 8px;
         padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .navegacao a {
-        font-size: 11px;
-        padding: 6px 10px;
-        text-align: center;
-        width: 100%;
+       font-size: 11px;
+       padding: 6px 10px;
+       text-align: center;
+       width: 100%;
+       box-sizing: border-box;
     }
 
     .inicio-titulo h1 {
@@ -788,7 +796,7 @@ footer {
 
     .resumo-container-beneficios,
     .resumo-container-importancia,
-    .resumo-container-dependenci {
+    .resumo-container-dependencia {
         width: 95%;
         padding: 40px 20px;
         margin: 20px auto;
@@ -833,13 +841,25 @@ footer {
         text-align: center;
     }
 
+    .sobre-containers{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .sobre h1{
         font-size: 22px;
     }
 
     .sobre p {
+        text-align: center;
+        width: 90%;
         font-size: 16px;
         padding: 8px;
+    }
+
+    .sobre img{
+        max-width: 90%;
+        height: auto;
     }
 
     .contato-item,
