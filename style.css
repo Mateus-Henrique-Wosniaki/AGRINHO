@@ -38,7 +38,7 @@ body {
 
 .botao-voltar:hover {
     padding: 25px;
-    color: var(--cor-complementar2);
+    color: #d69c08;
 }
 
 .navegacao {
@@ -455,6 +455,7 @@ body {
     background-color: var(--cor-complementar);
     width: auto;
     min-height: 40vh;
+    height: auto;
     padding: 50px;
     font-family: var(--fonte-principal);
 }
@@ -498,7 +499,8 @@ body {
 .contato-email {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     max-width: 30rem;
     height: 20rem;
@@ -510,11 +512,64 @@ body {
 h4 {
     font-family: var(--fonte-principal);
     font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+.contato-email h4 {
+    padding: 10px 10px;
+}
+
+.contato-email h4:hover {   
+    text-decoration:underline;
 }
 
 .contato-email a {
     text-decoration: none;
     color: var(--cor-destaque2);
+}
+
+.contato-email-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.contato-email-formulario label{
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+.contato-email-formulario input,
+.contato-email-formulario textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--cor-destaque2);
+    border-radius: 8px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    resize: none;
+}
+
+.contato-email-formulario button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-complementar);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.contato-email-formulario button:hover{
+    background-color: var(--cor-destaque2);
+    box-shadow: 0 0 10px var(--cor-destaque);
 }
 
 
@@ -752,15 +807,23 @@ footer {
 
 
 @media (max-width: 415px) {
+
+    .botao-voltar {
+        bottom: 8px;
+        right: 8px;
+        padding: 10px;
+        font-size: 45px;
+    }
+
     .navegacao {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       height: auto;
-       padding: 8px;
-       width: 100%;
-       box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .navegacao-links {
@@ -774,23 +837,23 @@ footer {
     }
 
     .navegacao a {
-       font-size: 10px;
-       padding: 4px 8px;
-       text-align: center;
-       width: 100%;
-       box-sizing: border-box;
+        font-size: 11px;
+        padding: 6px 10px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .inicio-titulo h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .inicio-titulo h6 {
-        font-size: 14px;
+        font-size: 18px;
         color: var(--cor-destaque);
     }
 
-    .resumo-titulo{
+    .resumo-titulo {
         font-size: 22px;
     }
 
@@ -814,7 +877,7 @@ footer {
         padding: 70px;
     }
 
-    .eventos-titulo{
+    .eventos-titulo {
         font-size: 22px;
     }
 
@@ -826,7 +889,13 @@ footer {
         width: 95%;
         padding: 30px;
     }
-    
+
+    .eventos-container-bloco-expolondrina,
+    .eventos-container-bloco-expoinga {
+        text-align: center;
+        align-items: center;
+    }
+
     .eventos-container-expolondrina,
     .eventos-container-expoinga {
         width: 100%;
@@ -837,16 +906,16 @@ footer {
         padding: 10px;
     }
 
-    .sobre{
+    .sobre {
         text-align: center;
     }
 
-    .sobre-containers{
+    .sobre-containers {
         flex-direction: column;
         align-items: center;
     }
 
-    .sobre h1{
+    .sobre h1 {
         font-size: 22px;
     }
 
@@ -857,7 +926,7 @@ footer {
         padding: 8px;
     }
 
-    .sobre img{
+    .sobre img {
         max-width: 90%;
         height: auto;
     }
