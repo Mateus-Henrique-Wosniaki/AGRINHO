@@ -82,7 +82,7 @@ As seções são responsáveis por separar os conteúdos da página. Conforme ap
 >> Descreve o objetivo do projeto e suas informações de criação.
 
 > [**CONTATO**]
->> Apresenta o email @escola do estudante para contato.
+>> Apresenta o email @escola do estudante para contato. Simula o envio de uma mensagem do leitor ao estudante.
 
 
 ### Rodapé
